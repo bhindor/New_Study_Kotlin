@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:text="안녕하세요"
+        android:textColor="@color/black"
+        android:ems="8"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_price"
+        app:layout_constraintStart_toEndOf="@id/img_main"
+        app:layout_constraintTop_toTopOf="@id/img_main" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="김민성"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="햄삐"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_author" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="10000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_publisher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
